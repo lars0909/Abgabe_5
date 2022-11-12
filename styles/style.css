@@ -13,10 +13,16 @@ nav {
     animation: diashow 20s infinite;
 }
 @keyframes diashow{
-    0% {background-image:url("../img/banner.jpg")}
-    33% {background-image:url("../img/banner2.jpg")}
-    66% {background-image:url("../img/banner3.jpg")}
-    100% {background-image:url("../img/banner.jpg")}
+    0% {background-image:url("../img/banner.jpg");}
+    33% {background-image:url("../img/banner2.jpg");}
+    66% {background-image:url("../img/banner3.jpg");}
+    100% {background-image:url(../img/banner.jpg);}
+}
+nav img{
+    position: fixed;
+    right: 0px;
+    z-index: 1;
+    width: 20%;
 }
 nav ul{
     list-style: none;
@@ -26,7 +32,7 @@ a {
     float: right;
     padding-top: 5rem;
     color: lightgrey;
-    font-family: sans-serif ;
+    font-family: Roboto, sans-serif;
     text-align: center;
     font-size: 200%;
     text-decoration: none;
@@ -52,6 +58,11 @@ a:hover{
 #nach_links_kollege:hover{
     border: 0px;
 }
+.banner{
+    background-image:url("../img/logo_Zeichenfläche\ 1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 article {
     padding-top: 50px;
     padding-left: 15%;
@@ -73,9 +84,12 @@ article img{
     width: 100%;
     padding-left: 0%;
  }
- article img:not(:hover){
+ article img:hover img{
     filter: blur(5px);
  }
+article img:not(:hover){
+    filter: blur(5px);
+ } 
 article a{
     text-align: left;
     font-size: 100%;
