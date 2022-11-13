@@ -32,7 +32,7 @@ a {
     float: right;
     padding-top: 5rem;
     color: lightgrey;
-    font-family: Roboto, sans-serif;
+    font-family: sono, sans-serif;
     text-align: center;
     font-size: 200%;
     text-decoration: none;
@@ -73,7 +73,7 @@ article {
  }
 article h2{
     padding-left: 5%;
-    font-family: sans-serif;
+    font-family: sono;
     font-size: 230%;
  }
 article img{
